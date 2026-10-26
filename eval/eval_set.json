@@ -1,0 +1,14 @@
+[
+ {"q": "What attendance percentage do I need to sit the end-semester exam?", "expect": "academic_regulations#attendance", "tools": ["search_policy"]},
+ {"q": "Can a medical certificate condone attendance shortfall?", "expect": "academic_regulations#attendance", "tools": ["search_policy"]},
+ {"q": "How do I withdraw from a course and what form is needed?", "expect": "academic_regulations#course-withdrawal", "tools": ["search_policy"]},
+ {"q": "When is the course withdrawal deadline?", "expect": "academic_regulations#course-withdrawal", "tools": ["search_policy", "check_deadline"]},
+ {"q": "How many days do I have to file a grade appeal?", "expect": "academic_regulations#grade-appeals", "tools": ["search_policy"]},
+ {"q": "Which committee decides escalated grade appeals?", "expect": "academic_regulations#grade-appeals", "tools": ["search_policy"]},
+ {"q": "What is the fee for re-evaluation of an answer script?", "expect": "academic_regulations#re-evaluation", "tools": ["search_policy"]},
+ {"q": "How long are student records retained after graduation?", "expect": "data_protection#data-retention", "tools": ["search_policy"]},
+ {"q": "Within how many hours must a data breach be reported to the DPO?", "expect": "data_protection#breach-reporting", "tools": ["search_policy"]},
+ {"q": "How long does a personal data access request take to answer?", "expect": "data_protection#access-requests", "tools": ["search_policy"]},
+ {"q": "What is the status of REQ-1002?", "expect": null, "tools": ["get_request_status"]},
+ {"q": "What is the cafeteria menu on Friday?", "expect": null, "tools": [], "should_refuse": true}
+]
